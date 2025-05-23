@@ -65,7 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Future<void> _drawRoute(LatLng origin, LatLng dest) async {
-    final apiKey = 'AIzaSyCaxWGvsQvtJXLoOsUXqNz5a-Zbe23AHOE';
+    final apiKey = 'API_KEY';
     final url =
         'https://maps.googleapis.com/maps/api/directions/json?origin=${origin.latitude},${origin.longitude}&destination=${dest.latitude},${dest.longitude}&key=$apiKey&mode=driving';
     final response = await http.get(Uri.parse(url));
@@ -175,7 +175,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Future<List<LatLng>> _getRoute(LatLng origin, LatLng dest) async {
-    final apiKey = 'AIzaSyCaxWGvsQvtJXLoOsUXqNz5a-Zbe23AHOE';
+    final apiKey = 'API_KEY';
     final url =
         'https://maps.googleapis.com/maps/api/directions/json?origin=${origin.latitude},${origin.longitude}&destination=${dest.latitude},${dest.longitude}&key=$apiKey&mode=driving';
     final response = await http.get(Uri.parse(url));
