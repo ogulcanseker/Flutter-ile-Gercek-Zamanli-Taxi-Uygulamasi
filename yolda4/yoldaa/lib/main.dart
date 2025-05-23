@@ -5,9 +5,9 @@ import 'screens/login_screen.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Supabase.initialize(
-    url: 'https://mvdiclgnomwqcnbhtzqd.supabase.co',
+    url: 'URL',
     anonKey:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im12ZGljbGdub213cWNuYmh0enFkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc2NjA3ODMsImV4cCI6MjA2MzIzNjc4M30.vFXGiLxjGIzzsY3ay4oTCKdzmbV5A_hoOvZnEFTzzyw',
+        'Anon_Key',
   );
   runApp(const MyApp());
 }
